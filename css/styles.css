@@ -1,3 +1,147 @@
+
+/* GLOBAL STYLES */
+/* Global meaning accross the whole website. */
+h1, h2, h3, h4, h5, h6 {
+  /* color:red; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-top: 10px;
+  /* text-transform: uppercase; */
+}
+/* h1 {
+  color: blue;
+} */
+
+h2 {
+  font-size: 2.2em;
+  /* 16px = 1em */
+  line-height: 1.3em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.color-text-white {
+  color: white;
+}
+
+/* Changing the size of the icons */
+.siz {
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* END OF GLOBAL SECTION */
+/* HOMEPAGE NAV */
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-default {
+  background: #000000;
+  /* bootstrap style */
+}
+
+.navbar-brand {
+  padding-top: 12px;
+}
+
+.navbar-brand h1 {
+  color:#ffffff;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+  font-size: 26px;
+  transition: color .1s ease-in;
+  /* 3-4 properties: things to change, time, curve */
+  /* all, color */
+  /* linear,even, ease-in, ease-out */
+}
+
+.navbar-brand h1:hover {
+  color:#c72c72;
+}
+
+/* HOMEPAGE JUMBOTRON */
+.jumbotron {
+  margin-bottom: 0px;
+
+}
+
+.home-jumbo {
+  background-color: rgb(36, 151, 163);
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+/* END HOMEPAGE JUMBOTRON */
+
+
+/* THIS IS THE FOOTER SECTION */
+.footer-section {
+  background: #031116;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color:#ffffff;
+  /* center the social when extra small & small screens */
+}
+.footer-social {
+  text-align: center;
+}
+
+
+
+.footer-social a {
+  color: #c72c72;
+}
+.footer-social a:hover {
+  color: #ffffff;
+  /* color when hovered over: white */
+}
+/* END OF FOOTER SECTION */
+
+
+/* Media Queries re: the screen size */
+/* Extra small screen is the default setting  */
+/* Small Screen */
+@media (min-width:768px) {
+  .home-jumbo {
+    /* height: 100vh; */
+    /* vh = view height */
+    /* like saying 100% width, but for height */
+    /* min-height: 800px; */
+    min-height: (100vh - 50px);
+  }
+}
+/* MEDIUM Screen */
+@media (min-width:992px) {
+  .home-jumbo {
+    text-align: left;
+  }
+  .home-jumbotron-left {
+    padding-top: 100px;
+  }
+  .footer-social {
+    text-align: left;
+  }
+
+
+}
+/* Large screen */
+@media (min-width:1200px) {
+
+
+}
+
+
+
 /* .h1 {
   font-family: 'Oswald', sans-serif;
   \the nav bar
@@ -6,3 +150,18 @@
 /* font-family: 'Montserrat', sans-serif; the headline*/
 
 /* font-family: 'Roboto', sans-serif;   the paragraphs*/
+/* p {
+just some in-class notes
+}
+
+a {
+
+}
+
+.class {
+
+}
+
+#id {
+
+} */
