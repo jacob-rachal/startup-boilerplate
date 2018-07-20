@@ -36,7 +36,17 @@ p {
 }
 /* I went with making a new class for the icons rather than reusing fab, since it is kinda scary reusing a fontawesome class. */
 
+.btn-primary {
+  background-color: #6c547d;
+  border: 0;
+}
+.btn-primary:hover {
+  background: #8a69a2;
+}
+/* Changing the hover background color to be different from that of the default. */
+/* Changing Bootstrap's button to be purple-ish and without a border. */
 /* END OF GLOBAL SECTION */
+
 /* HOMEPAGE NAV */
 .navbar {
   margin-bottom: 0px;
@@ -87,7 +97,36 @@ p {
   align-items: center;
   text-align: center;
 }
+
+
 /* END HOMEPAGE JUMBOTRON */
+
+/* BODY THINGS */
+.dual-row-body {
+  background: #030116;
+  text-align: center;
+  padding-top: 80px;
+}
+.squeezeme {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.dos {
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.dos p {
+  font-size: 0.7em;
+  margin-right: 10%;
+}
+.primary {
+  background: #337ab7;
+}
+.primary:hover {
+  background: #286090;
+}
+/* END of BODY */
 
 
 /* THIS IS THE FOOTER SECTION */
