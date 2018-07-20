@@ -34,6 +34,7 @@ p {
   margin-left: 5px;
   margin-right: 5px;
 }
+/* I went with making a new class for the icons rather than reusing fab, since it is kinda scary reusing a fontawesome class. */
 
 /* END OF GLOBAL SECTION */
 /* HOMEPAGE NAV */
@@ -60,11 +61,16 @@ p {
   transition: color .1s ease-in;
   /* 3-4 properties: things to change, time, curve */
   /* all, color */
+  /* time in seconds, having it at .4s makes for a nice effect */
   /* linear,even, ease-in, ease-out */
 }
 
 .navbar-brand h1:hover {
   color:#c72c72;
+  /* testing something stupid with the transition here... */
+  /* font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em; */
 }
 
 /* HOMEPAGE JUMBOTRON */
