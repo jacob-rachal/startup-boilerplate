@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Jacob Rachal, 7/16/2018 -->
+			<title>StartUP Technologies</title>
+		    <!-- link google fonts here -->
+				<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+		    <!-- link all the css here -->
+				<link rel="stylesheet" href="css/bootstrap.min.css">
+				<link rel="stylesheet" href="css/all.css">
+				<link rel="stylesheet" href="css/styles.css">
+		</head>
+		<body>
+				<nav class="navbar navbar-default">
+					<!-- <nav class="navbar navbar-invert"> -->
+					<div class="container">
+						<!-- changed container-fluid to container -->
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<!-- data-target targets the following major div class -->
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- <a class="navbar-brand" href="#">Brand</a> -->
+							<a class="navbar-brand" href="#"><h1>StartUP</h1></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+				<!-- END OF NAV BAR. -->
+
+        <!-- Contact body -->
+        <!-- going to have a google map, and then some other stuff -->
+        <section class="contact-hero overlay-yellow">
+          <div class="container">
+            <!-- pseudo-element 'Before' goes on here -->
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Google map of Bitwise South Stadium, Fresno -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.604240146298!2d-119.78796568471212!3d36.732064979962736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809460a5cfdf4b6b%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1532057114953" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <!-- If set width to 100%, same as width:600. -->
+              </div>
+              <div class="col-md-6">
+                <!-- Other contact things. -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+				<!-- END OF BODY  -->
+
+
+
+				<!-- BEGINNING OF FOOTER -->
+				<section class="footer-section">
+					<div class="container footer-social">
+						<div class="row">
+							<div class="col-md-4 col-md-offset-8">
+								<h4 class="text-uppercase">Follow us on social media</h4>
+								<!-- The icons we need -->
+								<a href="#">
+									<i class="fab fa-github siz"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-twitter siz"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-facebook-f siz"></i>
+								</a>
+								<a href="#">
+									<i class="fab fa-linkedin siz"></i>
+								</a>
+								<!-- note: I added the class "siz" to madify the icon sizes in styles.css instead of reusing fab due to how it is not a good idea to be redeclaring a class like that. Who knows, we might want to use other icons that are not sized like these are. -->
+							</div>
+						</div>
+						<!-- End of footer row -->
+					</div>
+					<!-- ./container -->
+				</section>
+				<!-- END of FOOTER Section -->
+
+		    <!-- link all the scripts here -->
+				<script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+				<script src="js/bootstrap.min.js" charset="utf-8"></script>
+		</body>
+</html>
