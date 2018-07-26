@@ -36,7 +36,17 @@ p {
 }
 /* I went with making a new class for the icons rather than reusing fab, since it is kinda scary reusing a fontawesome class. */
 
+.btn-primary {
+  background-color: #6c547d;
+  border: 0;
+}
+.btn-primary:hover {
+  background: #8a69a2;
+}
+/* Changing the hover background color to be different from that of the default. */
+/* Changing Bootstrap's button to be purple-ish and without a border. */
 /* END OF GLOBAL SECTION */
+
 /* HOMEPAGE NAV */
 .navbar {
   margin-bottom: 0px;
@@ -87,8 +97,86 @@ p {
   align-items: center;
   text-align: center;
 }
+
+
 /* END HOMEPAGE JUMBOTRON */
 
+/* BODY THINGS */
+.dual-row-body {
+  background: #030116;
+  text-align: center;
+  padding-top: 80px;
+}
+.squeezeme {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.dos {
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.dos p {
+  font-size: 0.7em;
+  margin-right: 10%;
+}
+.primary {
+  background: #337ab7;
+}
+.primary:hover {
+  background: #286090;
+}
+
+.round-n-round {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #EFE655;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* END of BODY */
+
+/* CONTACT PAGE things */
+.contact-hero {
+  /*  */
+  background-image: url('../img/contact-bg.jpg');
+  background-attachment: fixed;
+  position: relative;
+  /* mobile doesn't let the above thing fly. */
+  /* background-color: #EFE655; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.overlay-yellow:before {
+
+  display:block;
+  /* content:"hello"; */
+  content:"";
+  position: absolute;
+  /* showes up above/before the background image, need parent to have position: fixed */
+  top: 0px;
+  /* left:20px; */
+  width:100%;
+  height:100%;
+  background: rgba(238, 229, 85, .95);
+}
+
+/* .contact-hero:before {
+    display:block;
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: rgba(238, 229, 85, .95);
+} */
+
+
+
+/* END OF CONTACT PAGE things */
 
 /* THIS IS THE FOOTER SECTION */
 .footer-section {
