@@ -45,6 +45,14 @@ p {
 }
 /* Changing the hover background color to be different from that of the default. */
 /* Changing Bootstrap's button to be purple-ish and without a border. */
+.btn-ghost-pink:hover {
+    border:solid 1px #ffffff;
+    background:none;
+    color:#ffffff;
+    padding-left:35px;
+    padding-right:35px;
+    border-radius: 0;
+}
 /* END OF GLOBAL SECTION */
 
 /* HOMEPAGE NAV */
@@ -82,6 +90,20 @@ p {
   font-weight: 300;
   font-size: 1em; */
 }
+/* link coloration */
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+    color: #c72c72;
+    font-weight: 700;
+    font-size: 16px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color:#ffffff;
+}
+.nav-main-link.active-link {
+    color: #ffffff;
+}
+
+/* END NAVBAR */
 
 /* HOMEPAGE JUMBOTRON */
 .jumbotron {
@@ -98,26 +120,60 @@ p {
   text-align: center;
 }
 
-
+/* The below is the transition-code for the cityscape hover animation. */
+.intro-img {
+    transition: all .4s ease-out;
+}
+.intro-img:hover {
+    margin-top:-20px;
+    padding-bottom:20px;
+    margin-left:5px;
+}
 /* END HOMEPAGE JUMBOTRON */
 
 /* BODY THINGS */
 .dual-row-body {
-  background: #030116;
+  /* background: #030116;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 80px; */
+  background: #030116;
+  background-image: url(../img/astronaut.png);
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  padding-bottom: 80px;
+  color: #ffffff;
 }
+/* .second-content {
+  margin-top:460px;
+  margin-bottom:100px;
+} */
 .squeezeme {
-  margin-left: 20%;
+  /* margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 20px; */
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
 }
+
+/* button modifications */
+.btn-ghost-pink {
+    border: solid 1px #C72C72;
+    background: none;
+    color: #C72C72;
+    transition: all .1s ease-in;
+}
+
 .dos {
   text-align: left;
   padding-top: 50px;
   padding-bottom: 60px;
 }
 .dos p {
-  font-size: 0.7em;
+  font-size: 1em;
+  /* small note, can have decimal measures of em. */
   margin-right: 10%;
 }
 .primary {
@@ -150,6 +206,7 @@ p {
   /* background-color: #EFE655; */
   padding-top: 60px;
   padding-bottom: 60px;
+
 }
 .overlay-yellow:before {
 
@@ -165,6 +222,9 @@ p {
   background: rgba(238, 229, 85, .95);
 }
 
+.contact-list li:nth-child(even) {
+    background:#f3f3f3;
+}
 /* .contact-hero:before {
     display:block;
     content:"";
@@ -190,8 +250,6 @@ p {
   text-align: center;
 }
 
-
-
 .footer-social a {
   color: #c72c72;
 }
@@ -213,6 +271,9 @@ p {
     /* min-height: 800px; */
     min-height: (100vh - 50px);
   }
+  .squeezeme {
+    font-size: 21px;
+  }
 }
 /* MEDIUM Screen */
 @media (min-width:992px) {
@@ -226,12 +287,22 @@ p {
     text-align: left;
   }
 
+  /* These 2 below, I'm not too sure if they should be here due to coming from bootstrap. */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
 
 }
 /* Large screen */
 @media (min-width:1200px) {
-
-
+  .second-content {
+    margin-top: 400px;
+    margin-bottom: 50px;
+  }
 }
 
 
